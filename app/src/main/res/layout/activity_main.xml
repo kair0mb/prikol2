@@ -19,21 +19,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/lemonbut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lemmon714"
+        android:text="Lemon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.134"
@@ -55,8 +45,9 @@
         app:srcCompat="@drawable/banana" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/lemonimg"
         android:layout_width="119dp"
+        android:visibility="invisible"
         android:layout_height="181dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

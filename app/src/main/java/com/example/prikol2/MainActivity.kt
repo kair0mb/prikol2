@@ -12,11 +12,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val bananaButton: Button = findViewById(R.id.bananabut)
+        val lemonButton: Button = findViewById(R.id.lemonbut)
         val bananaImage: ImageView = findViewById(R.id.Bananaimg)
+        val lemonImage: ImageView = findViewById(R.id.lemonimg)
 
+        // Устанавливаем обработчик нажатия на кнопку для бананов
         bananaButton.setOnClickListener {
-
+            // При нажатии кнопки, делаем изображение банана видимым, а изображение лимона - невидимым
             bananaImage.visibility = View.VISIBLE
+            lemonImage.visibility = View.INVISIBLE
+        }
+
+        // Устанавливаем обработчик нажатия на кнопку для лимонов
+        lemonButton.setOnClickListener {
+            // При нажатии кнопки, делаем изображение лимона видимым, а изображение банана - невидимым
+            lemonImage.visibility = View.VISIBLE
+            bananaImage.visibility = View.INVISIBLE
         }
     }
 }
